@@ -64,10 +64,10 @@ pipeline {
 					docker.withRegistry('', 'dockerhub') {
 						dockerImage.push();
 						dockerImage.push('latest');
+					}
 				}
 			}
 		}
-
 	} 
 	
 	post {
