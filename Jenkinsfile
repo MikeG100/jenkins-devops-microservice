@@ -53,7 +53,7 @@ pipeline {
 			steps {
 				//docker build -t "mggray/currency-exchange-devops:$env.BUILD_TAG"
 				script {
-					dockerImage = docker.build("mggray/currency-exchange-devops:${env.BUILD_TAG}")
+					dockerImage = docker.build("mggray100/currency-exchange-devops:${env.BUILD_TAG}")
 				}
 			}
 		}
